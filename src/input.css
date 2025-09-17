@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@theme {
+  --color-green-54: #54bd95;
+  --color-white-f8: #f8f8fa;
+  --color-gray-a6: #a6a6a6;
+  --color-black-19: #191a15;
+  --text-size-40: 40px;
+  --color-white-f9: #f9f8fe;
+  --color-black-16: #161c28;
+  --color-black-22: #222938;
+}
+
+@layer utilities {
+  .mobile-container {
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
